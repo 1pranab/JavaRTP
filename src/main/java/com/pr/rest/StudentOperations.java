@@ -16,6 +16,7 @@ public class StudentOperations {
 	@PostMapping("/register")
 	public ResponseEntity<Student> registerStudent(@RequestBody Student student){
 		System.out.println(student);
+		System.out.print();
 		return new ResponseEntity<Student>(student,HttpStatus.OK);
 	}
 }
